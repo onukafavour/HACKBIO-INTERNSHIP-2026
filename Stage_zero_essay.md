@@ -1,4 +1,4 @@
-Your Heatmap Is Lying to You: How Bad Visualizations Corrupt Biological Insight
+**Your Heatmap Is Lying to You: How Bad Visualizations Corrupt Biological Insight**
 -------------------------------------------------------------------------------
 
 Heatmaps have become the default language of gene expression analysis. With a single command in R or Python, we can produce complex displays that seem to summarize entire RNA-seq or scRNA-seq experiments. Yet, behind the vivid gradients and neatly clustered samples often lies a quiet deception. Misuse of color scales, clustering defaults, and normalization can turn genuine biological signals into noise—or worse, false conclusions.

@@ -1,15 +1,15 @@
-#My names
-Names = "Onuka Favour"
+# Assignment of variables
+my_name         <- "Onuka Favour"           # Full name
+university      <- "Redeemer's University"   # University affiliation
+program_level   <- "MSc student"            # Academic program
+gene_of_interest <- "IL-6"                  # Favorite gene (interleukin-6)
+kingdom          <- "Animalia"              # Biological kingdom where gene is found
 
-#My university/Affiliation
-Uni_Affiliation = "Redeemer's University"
+# assigning paste0() to a variable
+intro_sentence <- paste0(
+  "My name is ", my_name, ", an ", program_level, 
+  " at the prestigious ", university, 
+  ". My favorite gene is ", gene_of_interest, " in ", kingdom, ".")
 
-
-#My gene of interest
-Fav_gene = "IL-6"
-
-#Organisms the gene is found
-org = "Animalia"
-
-#Code to print it out as a sentence
-paste0("My name is ", Names, ", An MSc student at the Prestigious ", Uni_Affiliation, ". ", "My Favorite gene is ", Fav_gene, " in ", org, ".") 
+#Print out the complete sentence
+print(intro_sentence)

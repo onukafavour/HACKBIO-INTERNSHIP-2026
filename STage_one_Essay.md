@@ -44,7 +44,7 @@ amino_acids <- strsplit(protein_upper, "")[[1]]
 **Key details:**
 - `strsplit(protein_upper, "")` splits on empty string, separating each character
 - Returns a list, so `[[1]]` extracts the first (and only) element
-- Results in a character vector: `c("C", "L", "A", "U", "D", "E")`
+- Results in a character vector: `c("K", "A", "C", "H", "I")`
 
 ## Step 4: Handling Case Sensitivity
 

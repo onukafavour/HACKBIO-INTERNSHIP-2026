@@ -35,7 +35,7 @@ Alternative approaches like data frames or lists would work but add unnecessary 
 
 ## Step 3: Breaking Down the Input Sequence
 
-The core challenge is converting a string like "CLAUDE" into individual characters that can be searched in our table. R's `strsplit()` function is perfect for this:
+The core challenge is converting a string like "KACHI" into individual characters that can be searched in our table. R's `strsplit()` function is perfect for this:
 
 ```r
 amino_acids <- strsplit(protein_upper, "")[[1]]
@@ -54,7 +54,7 @@ Protein sequences might be written in lowercase, uppercase, or mixed case. To en
 protein_upper <- toupper(protein_sequence)
 ```
 
-This simple transformation ensures "claude", "CLAUDE", and "ClaUdE" all produce the same result.
+This simple transformation ensures "kachi", "KACHI", and "KaChi" all produce the same result.
 
 ## Step 5: Implementing the Lookup and Accumulation Logic
 
@@ -102,10 +102,10 @@ This simple division converts the unit while preserving precision.
 The requirements specified using my name as the default input. This is implemented in the function signature:
 
 ```r
-calculate_protein_weight <- function(protein_sequence = "CLAUDE")
+calculate_protein_weight <- function(protein_sequence = "Kachi")
 ```
 
-Now calling `calculate_protein_weight()` without arguments automatically uses "CLAUDE" as input.
+Now calling `calculate_protein_weight()` without arguments automatically uses "Kachi" as input.
 
 ## Step 8: Testing and Validation
 
@@ -114,7 +114,7 @@ I created comprehensive test cases to verify the function works correctly:
 1. **Default test**: Verify the function works with no arguments
 2. **Single amino acid**: Test with "A" to verify basic lookup
 3. **Valid sequences**: Test with various protein sequences
-4. **Invalid character**: Test with "CLAUDEB" (B is not a valid amino acid code)
+4. **Invalid character**: Test with "KachiB" (B is not a valid amino acid code)
 5. **Case handling**: Test with lowercase to ensure `toupper()` works
 
 ## Challenges and Solutions
